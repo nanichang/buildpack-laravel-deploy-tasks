@@ -25,4 +25,4 @@ if [ -z "$DEPLOY_TASKS" ]; then
 fi
 
 #cd $build_dir && php artisan $DEPLOY_TASKS
-cd $build_dir && php artisan migrate --force && php artisan db:seed
+cd $build_dir && php artisan migrate:refresh --seed --force
