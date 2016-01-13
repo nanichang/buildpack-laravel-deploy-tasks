@@ -19,7 +19,7 @@ heroku buildpacks:add https://github.com/retnan/buildpack-laravel-deploy-tasks -
 Configure DEPLOY_TASKS environment variable with the tasks you want to run:
 
 ```
-heroku config:set DEPLOY_TASKS='migrate:refresh'
+heroku config:set DEPLOY_TASKS='true'
 ```
 
 # License
