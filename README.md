@@ -1,8 +1,8 @@
-# Heroku buildpack for running arbitrary php artisan tasks on deploy
+## Heroku buildpack for running 'php artisan migrate:refresh --seed --force' task on deploy - For development purpose only.
 
 This buildpack is intended for use after the regular [php-buildpack].
 
-# Usage
+## Usage
 
 If you are using the default buildpack, manually set your buildpack to Heroku's default PHP buidpack
 
@@ -22,7 +22,7 @@ Configure DEPLOY_TASKS environment variable with anything. This basically runs p
 heroku config:set DEPLOY_TASKS='true'
 ```
 
-# License
+## License
 
 MIT, see the LICENSE file.
 
