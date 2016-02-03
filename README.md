@@ -19,7 +19,7 @@ heroku buildpacks:add https://github.com/retnan/buildpack-laravel-deploy-tasks -
 Configure DEPLOY_TASKS environment variable with anything. This basically runs php artisan migrate:refresh and php artisan db:seed:
 
 ```
-heroku config:set DEPLOY_TASKS='true'
+heroku config:set DEPLOY_TASKS='true' --app nhub
 ```
 
 ## License
